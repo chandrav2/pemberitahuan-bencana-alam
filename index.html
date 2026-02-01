@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sistem Darurat Bencana | Bogor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- AUTO REFRESH DATA -->
+<meta http-equiv="refresh" content="120">
+
+<style>
+:root{
+  --red:#ff4d4d;
+  --orange:#ffb703;
+  --glass:rgba(255,255,255,.15);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+
+body{
+  background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1503435824048-a799a3a84bf7");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:30px;
+}
+
+.card{
+  background:var(--glass);
+  backdrop-filter:blur(16px);
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+
+header{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.profile{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  border:3px solid #fff;
+}
+
+.status{
+  background:rgba(255,77,77,.25);
+  padding:15px;
+  border-radius:14px;
+  font-weight:700;
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.section{
+  margin-top:30px;
+}
+
+.section h2{
+  margin-bottom:15px;
+  border-left:5px solid var(--orange);
+  padding-left:12px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:15px;
+}
+
+.box{
+  background:rgba(0,0,0,.35);
+  padding:15px;
+  border-radius:14px;
+}
+
+iframe{
+  width:100%;
+  height:380px;
+  border:none;
+  border-radius:14px;
+}
+
+footer{
+  margin-top:30px;
+  text-align:center;
+  font-size:13px;
+  opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔊 SIRENE DARURAT (HTML MURNI) -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_1c7d3d9d44.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+<div class="card">
+
+<header>
+  <img src="https://i.imgur.com/8Km9tLL.jpg" class="profile">
+  <div>
+    <h1>Sistem Peringatan Bencana Alam</h1>
+    <p>Kabupaten Bogor • Mode Darurat Aktif</p>
+  </div>
+</header>
+
+<div class="status">
+  🚨 DARURAT NASIONAL — MULTI BENCANA CUACA EKSTREM
+</div>
+
+<!-- DATA BENCANA -->
+<div class="section">
+<h2>Data Bencana & Penyebab</h2>
+<div class="grid">
+  <div class="box">
+    <b>🌊 Banjir</b><br>
+    Penyebab: Hujan ekstrem & sungai meluap<br>
+    Korban: 12 meninggal<br>
+    Selamat: 1.340 orang
+  </div>
+  <div class="box">
+    <b>⛰️ Longsor</b><br>
+    Penyebab: Tanah labil & hutan gundul<br>
+    Korban: 8 meninggal<br>
+    Selamat: 620 orang
+  </div>
+  <div class="box">
+    <b>🌪️ Puting Beliung</b><br>
+    Penyebab: Awan cumulonimbus<br>
+    Korban: 2 meninggal<br>
+    Selamat: 410 orang
+  </div>
+</div>
+</div>
+
+<!-- PETA INTERAKTIF -->
+<div class="section">
+<h2>Peta Wilayah Terdampak – Bogor</h2>
+<iframe 
+src="https://www.google.com/maps?q=Bogor,Jawa+Barat&z=11&output=embed">
+</iframe>
+</div>
+
+<!-- DATA OTOMATIS TANPA JS -->
+<div class="section">
+<h2>Data Otomatis (Live Sheet)</h2>
+<p style="opacity:.8;font-size:14px;margin-bottom:10px">
+Update otomatis via sumber eksternal (tanpa JavaScript)
+</p>
+
+<iframe 
+src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTEMPLATE/pubhtml?widget=true&headers=false">
+</iframe>
+</div>
+
+<!-- BANTUAN -->
+<div class="section">
+<h2>Pemberi Bantuan</h2>
+<div class="grid">
+  <div class="box">🏛️ BPBD, BNPB, TNI, POLRI</div>
+  <div class="box">❤️ PMI, ACT, Relawan Lokal</div>
+  <div class="box">🍱 Logistik & Air Bersih</div>
+  <div class="box">💊 Tim Medis & SAR</div>
+</div>
+</div>
+
+<footer>
+© 2026 Sistem Darurat Bencana Bogor • Data Simulasi Edukasi
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>
